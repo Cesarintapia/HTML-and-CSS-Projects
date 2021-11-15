@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-	  <head>
+	<head>
 		<meta charset="utf-8">
-        <title> The world of parrots </title>
-		<link rel="stylesheet" type="text/css" href="./css_files/one-page-website1.css">		
-		<link rel="stylesheet" type="text/css" href="./css_files/one-page-website2.css">	
-      </head>
-      <body>
+        	<title> The world of parrots </title>
+		  		<link rel="stylesheet" type="text/css" href="./css_files/one-page-website1.css">		
+		  		<link rel="stylesheet" type="text/css" href="./css_files/one-page-website2.css">
+		  		<link rel="stylesheet" type="text/css" href="./css_files/light_box.css">
+		  		<script src="./JS/one-page-website.js" defer></script>	
+    </head>
+	<body>
 		<header>
-		<br><br>
-			<h1> The amazing life of the Oratrix </h1>
+			<h1> <br><br> The amazing life of the Oratrix </h1>
 		</header>
 
-		<!-- NAV -->
+		<!--START NAV -->
+
 		<div class="wrap">
 			<div class="menu-container">		
 				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery"><li>GALLERY</li></a>
-					<a href="#reservation"><li>KNOW THE PARROTS</li></a>
+					<a href="#reservation"><li>KNOW THE ORATRIX</li></a>
                 </ul>
 			</div>
 		</div>	
+		<!--END NAV -->
 
-	<div>
-		<iframe src="https://www.youtube.com/embed/cpkr-tbYZTk" aling= "centerer;"> Parrot Video </iframe>
-	 </div>
-
-	<!--END NAV -->
-		
 <!--HOME -->
 	<div id="home">
 		<div class="container">
 			<div class="text-center">
-				<span class="head-main" color="green";>
+				<!--<iframe src="https://www.youtube.com/embed/cpkr-tbYZTk" aling= "centerer;" width="500px;" height="400px;" > Parrot Video </iframe><br>-->
+				<span class="head-main" color="green";>O R A T R I X</span>
 				<!--<p> The King lives in the Jungle </p></span>-->
-	        </div>					
+			</div>					
 	    </div>		
 	</div>		
 <!--END HOME -->
@@ -44,123 +42,225 @@
 <section id="gallery">
 	<div class="container">
 		<h1>Gallery</h1>
+		<h2 style="text-align:center">Hello Oratrix</h2><br>
 		<div class="flex-container">
 
-<!--Photo container 1 -->
-<div class="photo-container">
-	<div class="photo">
-		<img src = "./Parrots_Web/grey_parrot.jpg" width="350" height="380" alt = "The king is no available for the subdits">
-		<div class="photo-overlay">
-			<h3 class="white-head">Click to enlarge </h3>
-			<p> Salute the Oratrix! </p>
-		</div>
-	</div>
-</div>
-<!--END Photo container 1-->		
+			<!--Photo container 1 -->
+				<div class="photo-container">
+					<div class="photo">
+						<img src = "./Parrots_Web/grey_parrot.jpg" width="350" height="380" alt = "The king is no available for the subdits" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+							<div class="photo-overlay" onclick="openModal();currentSlide(1)">
+								<h3 class="white-head">Click to enlarge </h3>
+								<p> Salute the Oratrix! </p>
+							</div>
+					</div>
+				</div>
+			<!--END Photo container 1-->		
 
-<!--Photo container 2 -->
-<div class="photo-container">
-	<div class="photo">
-		<img src="./Parrots_Web/blue_parrot.jpg" width="350" height="380" alt="The king is no available for the subdits">
-		<div class="photo-overlay">
-			<h3 class="white-head">Click to enlarge</h3>
-			<p> Salute the Oratrix! </p>
-		</div>
-	</div>
-</div>
-<!--END Photo container -->	
-					
-<!--Photo container 3 -->
-<div class="photo-container">
-	<div class="photo">
-		<img src="./Parrots_Web/flying_parrot.jpg" width="350" height="380" alt="The king is no available for the subdits">
-			<h3 class="white-head">Click to enlarge</h3>
-			<p> Salute the Oratrix! </p>
-		</div>
-	</div>
-</div>
-<!--END Photo container -->		
+			<!--Photo container 2 -->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="./Parrots_Web/blue_parrot.jpg" width="350" height="380" alt="The king is no available for the subdits">
+							<div class="photo-overlay" onclick="openModal();currentSlide(2)">
+								<h3 class="white-head">Click to enlarge</h3>
+								<p> Salute the Oratrix! </p>
+							</div>
+					</div>
+				</div>
+			<!--END Photo container -->	
+								
+			<!--Photo container 3 -->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="./Parrots_Web/flying_parrot.jpg" width="350" height="380" alt="The king is no available for the subdits">
+							<div class="photo-overlay" onclick="openModal();currentSlide(3)">
+								<h3 class="white-head">Click to enlarge</h3>
+								<p> Salute the Oratrix! </p>
+							</div>
+					</div>
+				</div>
+			<!--END Photo container -->		
 
-<!--Photo container 4 -->
-<div class="photo-container">
-	<div class="photo">
-		<img src="./Parrots_Web/gatemalea_parrot.jpg" width="350" height="380" alt="The king is no available for the subdits">
-		<div class="photo-overlay">
-			<h3 class="white-head">Click to enlarge</h3>
-			<p> Salute the Oratrix! </p>
+			<!--Photo container 4 -->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="./Parrots_Web/gatemalea_parrot.jpg" width="350" height="380" alt="The king is no available for the subdits">
+							<div class="photo-overlay" onclick="openModal();currentSlide(4)">
+								<h3 class="white-head">Click to enlarge</h3>
+								<p> Salute the Oratrix! </p>
+							</div>
+					</div>		
+				</div>
+			<!--END Photo container -->		
+				
+			<!--Photo container 5 -->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="./Parrots_Web/green_parrot.jpg" width="350" height="380" alt="The king is no available for the subdits">
+							<div class="photo-overlay" onclick="openModal();currentSlide(5)">
+								<h3 class="white-head">Click to enlarge</h3>
+								<p> Salute the Oratrix! </p>
+							</div>
+					</div>
+				</div>
+			<!--END Photo container -->		
+				
+			<!--Photo container 6 -->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="./Parrots_Web/oratrix_parrot.jpg" width="350" height="380" alt="The king is no available for the subdits">
+							<div class="photo-overlay" onclick="openModal();currentSlide(6)">
+								<h3 class="white-head">Click to enlarge</h3>
+								<p> Salute the Oratrix! </p>
+							</div>
+					</div>
+				</div>
+			<!--END Photo container -->		
+
+			<!--Photo container 7 -->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="./Parrots_Web/parrots_meeting.jpg" width="350" height="380" alt="The King is no available for the subdits">
+							<div class="photo-overlay" onclick="openModal();currentSlide(7)">
+								<h3 class="white-head">Click to enlarge</h3>
+								<p> Salute the Oratrix! </p>
+							</div>
+					</div>
+				</div>	
+			<!--END Photo container -->		
+
+			<!--Photo container 8 -->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="./Parrots_Web/The_parrots.jpg" width="350" height="380" class="w3-round" alt="Today the king is no available for the subdits">
+							<div class="photo-overlay" onclick="openModal();currentSlide(8)">
+								<h3 class="white-head">Click to enlarge</h3>
+								<p> Salute the Oratrix! </p>
+							</div>
+					</div>
+				</div>
+			<!--END Photo container -->				
+
+			<!--Photo container 9 -->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="./Parrots_Web/white_parrot.jpeg" width="350" height="380" class="w3-round" alt="Today the king is no available for the subdits">
+							<div class="photo-overlay" onclick="openModal();currentSlide(9)">
+								<h3 class="white-head">Click to enlarge</h3>
+								<p> Salute the Oratrix! </p>
+							</div>
+					</div>
+				</div>
+			<!--END Photo container -->				
+
+			</div>
 		</div>
-	</div>
-</div>
-<!--END Photo container -->		
+		
+		<!-- start light box container-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+  
+	  				<div class="mySlides">
+						<div class="numbertext">1 / 9</div>
+							<img src="./Parrots_Web/grey_parrot.jpg" style="width:100%">
+	  				</div>
+  
+	  				<div class="mySlides">
+						<div class="numbertext">2 / 9</div>
+							<img src="./Parrots_Web/blue_parrot.jpg" style="width:100%">
+	  				</div>
+  
+	  				<div class="mySlides">
+						<div class="numbertext">3 / 9</div>
+							<img src="./Parrots_Web/flying_parrot.jpg" style="width:100%">
+	  				</div>
+	  
+					<div class="mySlides">
+						<div class="numbertext">4 / 9</div>
+							<img src="./Parrots_Web/gatemalea_parrot.jpg" style="width:100%">
+	  				</div>
+
+					  <div class="mySlides">
+						<div class="numbertext">5 / 9</div>
+							<img src="./Parrots_Web/green_parrot.jpg" style="width:100%">
+	  				</div>
+
+					  <div class="mySlides">
+						<div class="numbertext">6 / 9</div>
+							<img src="./Parrots_Web/oratrix_parrot.jpg" style="width:100%">
+	  				</div>
+
+					  <div class="mySlides">
+						<div class="numbertext">7 / 9</div>
+							<img src="./Parrots_Web/parrots_meeting.jpg" style="width:100%">
+	  				</div>
+
+					  <div class="mySlides">
+						<div class="numbertext">8 / 9</div>
+							<img src="./Parrots_Web/The_parrots.jpg" style="width:100%">
+	  				</div>
+
+					  <div class="mySlides">
+						<div class="numbertext">9 / 9</div>
+							<img src="./Parrots_Web/white_parrot.jpeg" style="width:100%">
+	  				</div>
+					  
+		  			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+		 	 		<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+				</div>
+			</spam>
+			
 	
-<!--Photo container 5 -->
-<div class="photo-container">
-	<div class="photo">
-		<img src="./Parrots_Web/green_parrot.jpg" width="350" height="380" alt="The king is no available for the subdits">
-		<div class="photo-overlay">
-			<h3 class="white-head">Click to enlarge</h3>
-			<p> Salute the Oratrix! </p>
+			<div class="column">
+				<img class="demo cursor" src="./Parrots_Web/grey_parrot.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+			</div>
+			
+			<div class="column">
+				<img class="demo cursor" src="./Parrots_Web/blue_parrot.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+			</div>
+		
+			<div class="column">
+				<img class="demo cursor" src="./Parrots_Web/flying_parrot.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+			</div>
+		
+			<div class="column">
+				<img class="demo cursor" src="./Parrots_Web/gatemalea_parrot.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+			</div>
+			
+			<div class="column">
+				<img class="demo cursor" src="./Parrots_Web/green_parrot.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+			</div>
+			
+			<div class="column">
+				<img class="demo cursor" src="./Parrots_Web/oratrix_parrot.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snow">
+			</div>
+		
+			<div class="column">
+				<img class="demo cursor" src="./Parrots_Web/parrots_meeting.jpg" style="width:100%" onclick="currentSlide(7)" alt="Mountains and fjords">
+			</div>
+		
+			<div class="column">
+				<img class="demo cursor" src="./Parrots_Web/The_parrots.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+			</div>
+
+			<div class="column">
+				<img class="demo cursor" src="./Parrots_Web/white_parrot.jpeg" style="width:100%" onclick="currentSlide(9)" alt="Northern Lights">
+			</div>
 		</div>
-	</div>
-</div>
-<!--END Photo container -->		
+		<!-- end light box container -->	
 	
-<!--Photo container 6 -->
-<div class="photo-container">
-	<div class="photo">
-		<img src="./Parrots_Web/oratrix_parrot.jpg" width="350" height="380" alt="The king is no available for the subdits">
-		<div class="photo-overlay">
-			<h3 class="white-head">Click to enlarge</h3>
-			<p> Salute the Oratrix! </p>
-		</div>
-	</div>
-</div>
-<!--END Photo container -->		
-
-<!--Photo container 7 -->
-<div class="photo-container">
-	<div class="photo">
-		<img src="./Parrots_Web/parrots_meeting.jpg" width="350" height="380" alt="The King is no available for the subdits">
-		<div class="photo-overlay">
-			<h3 class="white-head">Click to enlarge</h3>
-			<p> Salute the Oratrix! </p>
-		</div>
-	</div>
-</div>
-<!--END Photo container -->		
-
-<!--Photo container 8 -->
-<div class="photo-container">
-	<div class="photo">
-		<img src="./Parrots_Web/The_parrots.jpg" width="350" height="380" class="w3-round" alt="Today the king is no available for the subdits">
-		<div class="photo-overlay">
-			<h3 class="white-head">Click to enlarge</h3>
-			<p> Salute the Oratrix! </p>
-		</div>
-	</div>
-</div>
-<!--END Photo container -->				
-
-<!--Photo container 9 -->
-<div class="photo-container">
-	<div class="photo">
-		<img src="./Parrots_Web/white_parrot.jpeg" width="350" height="380" class="w3-round" alt="Today the king is no available for the subdits">
-		<div class="photo-overlay">
-			<h3 class="white-head">Click to enlarge</h3>
-			<p> Salute the Oratrix! </p>
-		</div>
-	</div>
-</div>
-
-<!--END Photo container -->				
-
-		</div>
 	</div>
 </section>
+
 <!--END GALLERY -->
 		
 <!--CITAS -->
-<section id="contact">
+<section id="reservation">
 	<div class="container">
 		<div class="heading-padding">
 			<h1 class="heading-padding"> Know the Oratrix </h1>
@@ -198,5 +298,5 @@
 	</div>			
 <!--END FOOTER -->
 		
-	    </body>
-        </html>
+    </body>
+</html>
